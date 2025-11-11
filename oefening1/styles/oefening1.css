@@ -4,12 +4,18 @@
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  /* regular / 400 */
+Font-family: "ExpletusSansRegular";
+src: url("../fonts/ExpletusSans-Regular.ttf");
+Font-weight: 100;  
+Font-size: 100;
 
 }
 
 @font-face {
-  /* bold / 700 */
+Font-family: "ExpletusSansBold";
+src: url("../fonts/ExpletusSans-Bold.ttf");
+Font-weight: 400;
+Font-size: 300;
 
 }
 
@@ -20,20 +26,20 @@ li:first-of-type {
 }
 
 li:first-of-type h2 {
-  /* JOUW CODE HIER */
+Font-family: "ExpletusSansBold";
   
-
 }
 
 li:first-of-type p {
-  /* JOUW CODE HIER */
+Font-family: "ExpletusSansRegular";
   
 
 }
 
 /* hiermee selecteer je de eerste letter van de p in het eerste blokje */
 li:first-of-type p::first-letter {
-  /* JOUW CODE HIER */
+Font-family: "ExpletusSansBold";
+Font-size: 2em;
 
   
 }
@@ -48,7 +54,10 @@ li:first-of-type p::first-letter {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+Font-family: "Montser";
+src: url("../fonts/Montserrat-Thin.ttf");
+Font-weight: thin;
+ 
 }
 
 
@@ -73,7 +82,11 @@ li:nth-of-type(2) h2 {
   margin:0;
   color:var(--color);
 
-  /* JOUW CODE HIER */
+  Font-family: "Montser";
+  Text-transform: uppercase;
+  Font-size: 3em;
+  line-height: 1em;
+  text-shadow:0 0 0.40em var(--shadow);
 
   
 }
@@ -88,7 +101,10 @@ li:nth-of-type(2) h2 {
 
 /* JOUW @FONT-FACE CODE HIER */
 @font-face {
-  
+Font-family: "Saira";
+src: url("../fonts/Saira_Condensed-Bold.ttf");
+Font-weight: bold;
+font-size: 700;
 }
 
 li:nth-of-type(3) {
@@ -97,13 +113,26 @@ li:nth-of-type(3) {
   --background:rgb(230 127 138);
   --shadow:rgb(0 0 0 / .75);
 
-  /* JOUW CODE HIER */
+  display:grid;
+  grid-auto-columns:min-content;  
+  place-content:center;
+  text-align:center;
+  
+  background-color:var(--background);
   
 
 }
 
 li:nth-of-type(3) h2 {
   /* JOUW CODE HIER */
+  font-family:"saira";
+color: var(--color);
+Font-size: 2.5em;
+line-height: 1em;
+text-transform: uppercase;
+letter-spacing: 5px;
+transform:skewY(-12deg);
+text-shadow:0.1em 0.1em 0 var(--shadow);
 
   
 }
